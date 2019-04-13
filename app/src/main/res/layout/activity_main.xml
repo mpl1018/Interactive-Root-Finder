@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interactive root finder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bisection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="BISECTION METHOD"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tangent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="TANGENT METHOD"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secant"
+        android:layout_below="@+id/tangent"
+        android:layout_centerHorizontal="true"
+        android:text="SECANT METHOD"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secant"
+        android:id="@+id/function"
+        android:hint="Enter your function here (NOT YET)"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/function"
+        android:id="@+id/intervalA"
+        android:hint="Interval A"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="250dp"
+        android:inputType="numberSigned|numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/function"
+        android:id="@+id/intervalB"
+        android:hint="Interval B"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberSigned|numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intervalA"
+        android:id="@+id/precision"
+        android:hint="Enter precision. Default: 0.1"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        />
+
+</RelativeLayout>

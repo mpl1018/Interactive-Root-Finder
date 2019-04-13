@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.decimal4j:decimal4j:1.0.3@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.decimal4j/decimal4j/1.0.3/2fee87827a766cfeb7dc45bf0a1bfa92ff9ea220/decimal4j-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.decimal4j/decimal4j/1.0.3/a13cf153d94e77da4873c46f0f7700d626d27b8e/decimal4j-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
