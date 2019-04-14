@@ -18,7 +18,7 @@ _You only have to enter your function, choose an interval where the root is, ent
 
 
 ## Useful documentation 
-This app has been made with the super-useful libraries [mXparser](http://mathparser.org/)	and [GraphView] (http://mathparser.org/). 
+This app has been made with the super-useful libraries [mXparser](http://mathparser.org/)	and [GraphView] (http://www.android-graphview.org/). 
 
   ## Math docmentation. 
   You can find the math documentation I used [here] (https://github.com/mpl1018/Interactive-Root-Finder/tree/master/imagenes).
