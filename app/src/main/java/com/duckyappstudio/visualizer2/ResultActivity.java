@@ -39,7 +39,7 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         int decimalPlaces = text.length() - integerPlaces - 1;
 
 
-        tvResult.setText(String.valueOf(DoubleRounder.round(resultado, decimalPlaces+1)) + " +- " + String.valueOf(precision));
+        tvResult.setText(String.valueOf(DoubleRounder.round(resultado, decimalPlaces)) + " +- " + String.valueOf(precision));
 
         bDeNuevo.setOnClickListener(ResultActivity.this);
     }

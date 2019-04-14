@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import org.mariuszgromada.math.mxparser.Function;
+import org.mariuszgromada.math.mxparser.mXparser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -61,6 +65,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void start_activity() {
+        Function f = new Function(String.valueOf(etFunction.getText()));
+        f.checkSyntax();
+        Toast.makeText(this, f.getErrorMessage(), Toast.LENGTH_LONG).show();
+
         Intent i = new Intent(this, MathActivity.class);
         //pasar funcion, intervalo y precisión
         i.putExtra("function", (String.valueOf(etFunction.getText())));

@@ -189,6 +189,7 @@ public class MathActivity extends AppCompatActivity implements View.OnClickListe
         double fa = f.calculate(a);
         double fb = f.calculate(b);
         double m = (fb-fa)/(b-a);
+        double diferencia;
 
         linea = new LineGraphSeries<>(new DataPoint[]{
                 new DataPoint(a, fa),
@@ -200,16 +201,19 @@ public class MathActivity extends AppCompatActivity implements View.OnClickListe
         //SET C;
         double x = ((-fa + m*a)/m);
         if ((fa*f.calculate(x))< 0){
-            this.b = x;
+            diferencia = Math.abs(b-x);
+            b = x;
             draw_perp_line(x);
         }
         else {
-            this.a = x;
+            diferencia = Math.abs(a - x);
+            a = x;
             draw_perp_line(x);
         }
 
         Toast.makeText(this, "Iteration " + Integer.toString(counter) + ". Estimated root: " + Double.toString(x), Toast.LENGTH_LONG).show();
-        if (((f.calculate(x)) <= precision) && (Math.abs(b-a)<= precision)) startResultActivity(x);
+        if (((f.calculate(x)) <= precision) && (diferencia<= precision)) startResultActivity(x);
+        Log.d("b-a" , String.valueOf(Math.abs(b-a)));
 
     }
 

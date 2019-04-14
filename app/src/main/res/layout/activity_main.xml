@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/secant"
         android:id="@+id/function"
-        android:hint="Enter your function here (NOT YET)"
+        android:hint="Enter your function here"
         android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"/>
